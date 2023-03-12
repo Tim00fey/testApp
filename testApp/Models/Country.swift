@@ -11,14 +11,14 @@ struct Test {
     let image: String
 }
 
-struct Question {
+struct CountryQuestion {
     let titleOfQuestion: String
     let responseType: ResponseType
     let answers: [Answer]
     
-    static func getQuestions() -> [Question] {
+    static func getQuestions() -> [CountryQuestion] {
         [
-            Question(
+            CountryQuestion(
                 titleOfQuestion: "Напишите столицу Китая",
                 responseType: .write,
                 answers: [
@@ -27,7 +27,7 @@ struct Question {
                     Answer(title: "", correct: .mistake)
                 ]
             ),
-            Question(
+            CountryQuestion(
                 titleOfQuestion: "Выберите столицу Германии",
                 responseType: .single,
                 answers: [
@@ -37,7 +37,7 @@ struct Question {
                     Answer(title: "Лондон", correct: .mistake)
                 ]
             ),
-            Question(
+            CountryQuestion(
                 titleOfQuestion: "Какие из городов являются столицами?",
                 responseType:  .multiple,
                 answers: [

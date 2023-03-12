@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBB54F2429BD150300685BB2 /* CountryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB54F2329BD150300685BB2 /* CountryQuestions.swift */; };
+		BBB54F2429BD150300685BB2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB54F2329BD150300685BB2 /* Country.swift */; };
 		C4E994ED29BDAC79000EB120 /* WelcomeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E994EC29BDAC79000EB120 /* WelcomeTestViewController.swift */; };
 		C4E994EF29BDAC8D000EB120 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E994EE29BDAC8D000EB120 /* TestViewController.swift */; };
 		C4E994F129BDACA3000EB120 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E994F029BDACA3000EB120 /* ResultViewController.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BBB54F2329BD150300685BB2 /* CountryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryQuestions.swift; sourceTree = "<group>"; };
+		BBB54F2329BD150300685BB2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		C4E994EC29BDAC79000EB120 /* WelcomeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTestViewController.swift; sourceTree = "<group>"; };
 		C4E994EE29BDAC8D000EB120 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C4E994F029BDACA3000EB120 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		C489FB2429BDA5360056C32A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BBB54F2329BD150300685BB2 /* CountryQuestions.swift */,
+				BBB54F2329BD150300685BB2 /* Country.swift */,
 				CF030FA029BE0502002B4923 /* Coffee.swift */,
 			);
 			path = Models;
@@ -185,7 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB54F2429BD150300685BB2 /* CountryQuestions.swift in Sources */,
+				BBB54F2429BD150300685BB2 /* Country.swift in Sources */,
 				C4E994ED29BDAC79000EB120 /* WelcomeTestViewController.swift in Sources */,
 				C4E994F129BDACA3000EB120 /* ResultViewController.swift in Sources */,
 				C4F65AD629BB8C87001AA10A /* MainViewController.swift in Sources */,

@@ -6,10 +6,28 @@
 //
 
 import UIKit
-
+//MARK: - Outlets and Private 
 final class TestViewController: UIViewController {
     
     @IBOutlet var answerButtons: [UIButton]!
+    
+    @IBOutlet var CountryTextField: UITextField!
+    @IBOutlet var writeCountryStackView: UIStackView!
+    
+    @IBOutlet var singleCountryView: UIStackView!
+    @IBOutlet var singleCountryButtons: [UIButton]!
+    
+    @IBOutlet var multipleCountryStackView: UIStackView!
+    @IBOutlet var multipleCountryLabels: [UILabel]!
+    @IBOutlet var multipleCountrySwitches: [UISwitch]!
+    
+    private let countryQuestions = CountryQuestion.getQuestions()
+    private var answerChosen: [Answer] = []
+    private var currentAnswers: [Answer] {
+        countryQuestions[questionIndex].answers
+    }
+    private var questionIndex = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
