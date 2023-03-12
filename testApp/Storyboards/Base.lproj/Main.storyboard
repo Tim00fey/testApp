@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FJr-57-CkA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oDn-rh-Gx5">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -33,17 +33,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Тесты" id="Int-Ez-nju"/>
                     <connections>
-                        <segue destination="eav-zd-weP" kind="show" identifier="goToWelcomeVC" id="aLI-2b-Rc6"/>
+                        <segue destination="eav-zd-weP" kind="show" identifier="goToWelcomeVC" id="TWI-ce-OwW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xa-Hz-HGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="-59"/>
+            <point key="canvasLocation" x="2788.125" y="-57.04225352112676"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Welcome Test View Controller-->
         <scene sceneID="cdC-r8-Z1H">
             <objects>
-                <viewController id="eav-zd-weP" customClass="WelcomeViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eav-zd-weP" customClass="WelcomeTestViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gL3-XG-qoa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="zwi-jB-XoZ" kind="show" id="rS7-Dm-5pz"/>
+                                    <segue destination="zwi-jB-XoZ" kind="show" identifier="goToTest" id="rS7-Dm-5pz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vb-xs-2bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706.25" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="3701.25" y="-59.154929577464792"/>
         </scene>
         <!--Вопрос № из -->
         <scene sceneID="eZh-1D-KFH">
@@ -111,42 +111,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-cr-sQA">
-                                <rect key="frame" x="16" y="186.5" width="288" height="195"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QWI-JG-s6S">
+                                <rect key="frame" x="16" y="172.5" width="288" height="223"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhd-6A-pD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34.5"/>
-                                        <color key="tintColor" systemColor="systemGray4Color"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Title of answer">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPS-Xu-Fix">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="37"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Title of answer">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Title of answer">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDq-v4-we0">
-                                        <rect key="frame" x="0.0" y="53.5" width="288" height="34.5"/>
-                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBV-r2-0dJ">
+                                        <rect key="frame" x="0.0" y="62" width="288" height="37"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Title of answer">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Title of answer">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esC-WB-4aB">
-                                        <rect key="frame" x="0.0" y="107" width="288" height="34.5"/>
-                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-sm-SPo">
+                                        <rect key="frame" x="0.0" y="124" width="288" height="37"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Title of answer">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Title of answer">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyM-c4-7m5">
-                                        <rect key="frame" x="0.0" y="160.5" width="288" height="34.5"/>
-                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6k-79-7vG">
+                                        <rect key="frame" x="0.0" y="186" width="288" height="37"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Title of answer">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Title of answer">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
@@ -157,24 +160,28 @@
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="DOf-Gf-8lp" secondAttribute="trailing" constant="16" id="0Um-6F-wLW"/>
-                            <constraint firstItem="U0t-cr-sQA" firstAttribute="centerY" secondItem="QIf-XW-kTd" secondAttribute="centerY" id="DvN-4R-368"/>
                             <constraint firstItem="1cM-L1-vaj" firstAttribute="leading" secondItem="QIf-XW-kTd" secondAttribute="leading" id="PgZ-4D-7ue"/>
                             <constraint firstItem="DOf-Gf-8lp" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="S45-ea-p6O"/>
-                            <constraint firstItem="U0t-cr-sQA" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="UbS-NO-qei"/>
                             <constraint firstAttribute="trailing" secondItem="1cM-L1-vaj" secondAttribute="trailing" id="alm-tc-v2c"/>
+                            <constraint firstItem="QWI-JG-s6S" firstAttribute="centerY" secondItem="QIf-XW-kTd" secondAttribute="centerY" id="fR6-hL-45I"/>
                             <constraint firstItem="1cM-L1-vaj" firstAttribute="top" secondItem="QIf-XW-kTd" secondAttribute="top" constant="92" id="liY-Il-OuX"/>
-                            <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="U0t-cr-sQA" secondAttribute="trailing" constant="16" id="mfB-sL-Wqi"/>
                             <constraint firstItem="DOf-Gf-8lp" firstAttribute="top" secondItem="1cM-L1-vaj" secondAttribute="bottom" constant="16" id="sYi-N0-D5e"/>
+                            <constraint firstItem="QWI-JG-s6S" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="ulF-t3-4jC"/>
+                            <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="QWI-JG-s6S" secondAttribute="trailing" constant="16" id="z1e-s5-DvW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос № из " largeTitleDisplayMode="always" id="6PM-5x-LJf"/>
                     <connections>
-                        <segue destination="k9Q-Ql-YVG" kind="show" id="u6O-9I-QOj"/>
+                        <outletCollection property="answerButtons" destination="gPS-Xu-Fix" collectionClass="NSMutableArray" id="EEZ-bo-42O"/>
+                        <outletCollection property="answerButtons" destination="nBV-r2-0dJ" collectionClass="NSMutableArray" id="BGU-AT-lu1"/>
+                        <outletCollection property="answerButtons" destination="O6k-79-7vG" collectionClass="NSMutableArray" id="qSh-a9-2fS"/>
+                        <outletCollection property="answerButtons" destination="C5g-sm-SPo" collectionClass="NSMutableArray" id="KN9-Go-qZg"/>
+                        <segue destination="k9Q-Ql-YVG" kind="show" identifier="goToResult" id="big-Fc-oxc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aX-TL-FOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2677.5" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="4672.5" y="-59.154929577464792"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="wyE-MO-Qwk">
@@ -209,28 +216,34 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="xTG-IX-otl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="house" catalog="system" id="dl2-jk-5Hc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="house" catalog="system" id="dl2-jk-5Hc">
+                            <connections>
+                                <action selector="goHomeButtonTapped:" destination="k9Q-Ql-YVG" id="IaW-Wk-p6d"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbX-00-Nh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3691" y="-57"/>
+            <point key="canvasLocation" x="5685" y="-57.04225352112676"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Caj-pL-cdb">
+        <scene sceneID="2PG-sP-vfh">
             <objects>
-                <navigationController id="FJr-57-CkA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="vz6-yg-Bwt">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDn-rh-Gx5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ux5-vA-sKa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9gc-qP-gjK" kind="relationship" relationship="rootViewController" id="6cH-oQ-PUh"/>
+                        <segue destination="9gc-qP-gjK" kind="relationship" relationship="rootViewController" id="M4V-9q-NNz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0RL-Hv-OOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iui-wc-qIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="-59"/>
+            <point key="canvasLocation" x="1790.625" y="-57.04225352112676"/>
         </scene>
     </scenes>
     <resources>
