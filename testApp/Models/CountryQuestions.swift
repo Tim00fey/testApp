@@ -6,14 +6,14 @@
 //
 
 struct Question {
-    let title: String
+    let titleOfQuestion: String
     let responseType: ResponseType
     let answers: [Answer]
     
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "Напишите столицу Китая",
+                titleOfQuestion: "Напишите столицу Китая",
                 responseType: .write,
                 answers: [
                     Answer(title: "Пекин", correct: .right),
@@ -22,7 +22,7 @@ struct Question {
                 ]
             ),
             Question(
-                title: "Выберите столицу Германии",
+                titleOfQuestion: "Выберите столицу Германии",
                 responseType: .single,
                 answers: [
                     Answer(title: "Мюнхен", correct: .mistake),
@@ -32,7 +32,7 @@ struct Question {
                 ]
             ),
             Question(
-                title: "Какие из городов являются столицами?",
+                titleOfQuestion: "Какие из городов являются столицами?",
                 responseType:  .multiple,
                 answers: [
                     Answer(title: "Вашингтон", correct: .right),
