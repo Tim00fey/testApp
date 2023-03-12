@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+final class TestViewController: UIViewController {
     
     @IBOutlet var answerButtons: [UIButton]!
     
@@ -18,7 +18,14 @@ class TestViewController: UIViewController {
         setupAnswerButtons(answerButtons)
     }
     
-
+    @IBAction func answerButtonTapped(_ sender: UIButton) {
+        answerButtons.forEach { button in
+            button.backgroundColor = .systemGray5
+        }
+        
+        sender.backgroundColor = .systemBlue
+    }
+    
 }
 
 // MARK: Private Methods

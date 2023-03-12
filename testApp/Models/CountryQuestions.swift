@@ -5,6 +5,12 @@
 //  Created by 1234 on 11.03.2023.
 //
 
+struct Test {
+    let titleOfTest: String
+    let descriptionOfTest: String
+    let image: String
+}
+
 struct Question {
     let titleOfQuestion: String
     let responseType: ResponseType

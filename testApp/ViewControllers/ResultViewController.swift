@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+final class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +15,7 @@ class ResultViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
-    
-    @IBAction func goHomeButtonTapped(_ sender: UIBarButtonItem) {
-        navigationController?.popViewController(animated: true)
+    @IBAction func goHomeButtonTapped() {
     }
+    
 }
