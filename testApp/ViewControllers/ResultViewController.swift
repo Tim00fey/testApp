@@ -16,6 +16,7 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction func goHomeButtonTapped() {
+        dismiss(animated: true)
     }
     
 }

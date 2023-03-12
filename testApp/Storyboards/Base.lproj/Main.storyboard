@@ -44,7 +44,7 @@
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="eav-zd-weP" kind="show" id="mBT-k2-oRv"/>
+                                                    <segue destination="eav-zd-weP" kind="show" id="JCc-ME-cyp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -81,7 +81,7 @@
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="eav-zd-weP" kind="show" id="nHr-Kq-ryx"/>
+                                                    <segue destination="eav-zd-weP" kind="show" id="A0S-ux-PeO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vb-xs-2bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5696.25" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="5754" y="-57"/>
         </scene>
         <!--Вопрос № из -->
         <scene sceneID="eZh-1D-KFH">
@@ -298,6 +298,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                <connections>
+                                    <segue destination="f1J-We-2s0" kind="show" identifier="goToResult" id="ybY-jR-7Li"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4UX-j4-zG1"/>
@@ -330,62 +333,55 @@
                         <outletCollection property="answerButtons" destination="nBV-r2-0dJ" collectionClass="NSMutableArray" id="BGU-AT-lu1"/>
                         <outletCollection property="answerButtons" destination="O6k-79-7vG" collectionClass="NSMutableArray" id="qSh-a9-2fS"/>
                         <outletCollection property="answerButtons" destination="C5g-sm-SPo" collectionClass="NSMutableArray" id="KN9-Go-qZg"/>
-                        <segue destination="k9Q-Ql-YVG" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="Jko-3S-c0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aX-TL-FOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7665" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="7978" y="-59"/>
         </scene>
         <!--Result View Controller-->
-        <scene sceneID="wyE-MO-Qwk">
+        <scene sceneID="hhO-vA-H1b">
             <objects>
-                <viewController id="k9Q-Ql-YVG" customClass="ResultViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="02w-TP-KcW">
+                <viewController id="f1J-We-2s0" customClass="ResultViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cX-0l-sAv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHK-Rt-27V">
-                                <rect key="frame" x="16" y="100" width="288" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGu-dH-nDV">
+                                <rect key="frame" x="16" y="64" width="288" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKZ-TH-1tu">
-                                <rect key="frame" x="16" y="186" width="288" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rau-SA-1Ea">
+                                <rect key="frame" x="16" y="130" width="288" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qW-76-3cH">
-                                <rect key="frame" x="260.5" y="15" width="54.5" height="34"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="house" catalog="system"/>
-                                <connections>
-                                    <action selector="goHomeButtonTapped" destination="k9Q-Ql-YVG" eventType="touchUpInside" id="b7E-Rd-sRM"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Kkg-vB-u74"/>
+                        <viewLayoutGuide key="safeArea" id="6fD-Og-uyj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kkg-vB-u74" firstAttribute="trailing" secondItem="3qW-76-3cH" secondAttribute="trailing" constant="5" id="Blu-Fx-jgf"/>
-                            <constraint firstItem="CHK-Rt-27V" firstAttribute="leading" secondItem="Kkg-vB-u74" secondAttribute="leading" constant="16" id="DFf-Gc-0Au"/>
-                            <constraint firstItem="Kkg-vB-u74" firstAttribute="trailing" secondItem="CHK-Rt-27V" secondAttribute="trailing" constant="16" id="Kbm-Uv-vPS"/>
-                            <constraint firstItem="Kkg-vB-u74" firstAttribute="trailing" secondItem="nKZ-TH-1tu" secondAttribute="trailing" constant="16" id="Mkx-ik-C5B"/>
-                            <constraint firstItem="3qW-76-3cH" firstAttribute="top" secondItem="Kkg-vB-u74" secondAttribute="top" constant="15" id="PXy-fE-FJf"/>
-                            <constraint firstItem="CHK-Rt-27V" firstAttribute="top" secondItem="Kkg-vB-u74" secondAttribute="top" constant="100" id="Yab-Th-97S"/>
-                            <constraint firstItem="nKZ-TH-1tu" firstAttribute="leading" secondItem="Kkg-vB-u74" secondAttribute="leading" constant="16" id="mpe-7L-tbC"/>
-                            <constraint firstItem="nKZ-TH-1tu" firstAttribute="top" secondItem="CHK-Rt-27V" secondAttribute="bottom" constant="50" id="wQK-LV-P52"/>
+                            <constraint firstItem="aGu-dH-nDV" firstAttribute="top" secondItem="6fD-Og-uyj" secondAttribute="top" constant="20" id="A2K-MK-boa"/>
+                            <constraint firstItem="rau-SA-1Ea" firstAttribute="leading" secondItem="6fD-Og-uyj" secondAttribute="leading" constant="16" id="Iyd-JN-ojK"/>
+                            <constraint firstItem="6fD-Og-uyj" firstAttribute="trailing" secondItem="rau-SA-1Ea" secondAttribute="trailing" constant="16" id="JAK-Gw-dPW"/>
+                            <constraint firstItem="rau-SA-1Ea" firstAttribute="top" secondItem="aGu-dH-nDV" secondAttribute="bottom" constant="30" id="SBG-sj-w94"/>
+                            <constraint firstItem="aGu-dH-nDV" firstAttribute="leading" secondItem="6fD-Og-uyj" secondAttribute="leading" constant="16" id="Z6b-Vy-gLV"/>
+                            <constraint firstItem="6fD-Og-uyj" firstAttribute="trailing" secondItem="aGu-dH-nDV" secondAttribute="trailing" constant="16" id="uT9-TE-ROm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="xTG-IX-otl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="house" catalog="system" id="dl2-jk-5Hc"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" style="editor" id="SD8-U4-hkb">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="house" catalog="system" id="slX-gy-qiH">
+                            <connections>
+                                <action selector="goHomeButtonTapped" destination="f1J-We-2s0" id="MtS-S9-EQg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WbX-00-Nh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKo-At-NTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8677.5" y="-57.04225352112676"/>
+            <point key="canvasLocation" x="9071" y="-57"/>
         </scene>
         <!--О разработчиках-->
         <scene sceneID="JZf-Ri-DPt">
@@ -410,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcO-SO-rZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12699.375" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="13696.875" y="-59.154929577464792"/>
         </scene>
         <!--Тесты-->
         <scene sceneID="8Gg-Jt-5s8">
@@ -457,7 +453,7 @@
                     <tabBarItem key="tabBarItem" title="О разработчиках" image="info" catalog="system" id="W8U-VR-gY8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="l2W-iY-XYO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -467,7 +463,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B6-JN-V8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11701.875" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="12699.375" y="-59.154929577464792"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vvM-vH-1tT">
@@ -485,11 +481,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ten-gF-Rwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6667.5" y="-59.154929577464792"/>
+            <point key="canvasLocation" x="6919" y="-57"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mBT-k2-oRv"/>
+        <segue reference="JCc-ME-cyp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="city" width="512" height="512"/>
