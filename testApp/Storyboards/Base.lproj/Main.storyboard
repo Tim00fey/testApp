@@ -363,6 +363,7 @@
                     <connections>
                         <outlet property="buttonsStack" destination="QWI-JG-s6S" id="hPk-yp-fm7"/>
                         <outlet property="multipleStack" destination="6qx-oX-wxc" id="MTa-jg-eYW"/>
+                        <outlet property="questionProgressView" destination="Ldh-vK-NAh" id="weg-Uz-WvO"/>
                         <outlet property="slider" destination="52C-Yd-B7n" id="dDY-yQ-pes"/>
                         <outlet property="sliderStack" destination="Smm-8t-upc" id="a8p-if-qnA"/>
                         <outlet property="textField" destination="88L-ao-jUa" id="FQj-c7-pGZ"/>

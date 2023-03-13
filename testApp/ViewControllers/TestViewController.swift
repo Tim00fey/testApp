@@ -11,7 +11,6 @@ final class TestViewController: UIViewController {
     
     @IBOutlet var titleOfQuestion: UILabel!
     
-    @IBOutlet var questionLabel: UILabel!
     @IBOutlet var questionProgressView: UIProgressView!
     
     @IBOutlet var answerButtons: [UIButton]!
@@ -50,12 +49,12 @@ final class TestViewController: UIViewController {
         sender.backgroundColor = .systemBlue
     }
     
-//    @IBAction func writeButtonTapped() {
+    @IBAction func writeButtonTapped() {
 //        if textField.text == ([answers].title, for .write) {
 //            answerChosen.append()
 //        }
-//        nextQuestion()
-//    }
+        nextQuestion()
+    }
     
     @IBAction func singleButtonTapped(_ sender: UIButton) {
         guard let buttonIndex = answerButtons.firstIndex(of: sender)
@@ -97,7 +96,7 @@ private extension TestViewController {
         }
         let currentQuestion = countryQuestions[questionIndex]
         
-        questionLabel.text = currentQuestion.titleOfQuestion
+        titleOfQuestion.text = currentQuestion.titleOfQuestion
         
         let totalProgress = Float(questionIndex) / Float(countryQuestions.count)
         questionProgressView.setProgress(totalProgress, animated: true)
