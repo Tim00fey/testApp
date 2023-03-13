@@ -17,7 +17,6 @@ final class TestViewController: UIViewController {
     @IBOutlet var answerButtons: [UIButton]!
     @IBOutlet var buttonsStack: UIStackView!
 
-    @IBOutlet var countryTextField: UITextField!
     @IBOutlet var writeStackView: UIStackView!
     
     @IBOutlet var multipleLabels: [UILabel]!
@@ -52,14 +51,14 @@ final class TestViewController: UIViewController {
     }
     
     @IBAction func writeButtonTapped() {
-        if countryTextField.text == (answer.title, for .write) {
+        if textField.text == (answer.title, for .write) {
             answerChosen.append(currentAnswers[Index])
         }
         nextQuestion()
     }
     
     @IBAction func singleButtonTapped(_ sender: UIButton) {
-        guard let buttonIndex = buttonsStack.firstIndex(of: sender)
+        guard let buttonIndex = answerButtons.firstIndex(of: sender)
         else { return}
         
         let currentAnswer = currentAnswers[buttonIndex]
@@ -67,11 +66,11 @@ final class TestViewController: UIViewController {
         
         nextQuestion()
     }
-}
+
 
 @IBAction func multipleButtonPressed() {
     for (multipleSwitch, answer) in zip(multipleSwitches, currentAnswers) {
-        if multipleSwitches.isOn{
+        if multipleSwitch.isOn{
             answerChosen.append(answer)
         }
     }
@@ -83,7 +82,6 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
 }
-
 
 // MARK: Private Methods
 private extension TestViewController {
