@@ -435,7 +435,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-vX-Are">
-                                <rect key="frame" x="0.0" y="44" width="320" height="907"/>
+                                <rect key="frame" x="0.0" y="92.5" width="320" height="858.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40a-gw-Zsz">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
@@ -652,8 +652,8 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
-        <image name="Гунин Глеб" width="640" height="640"/>
-        <image name="Книга Кирилл" width="640" height="640"/>
+        <image name="Гунин Глеб" width="320" height="320"/>
+        <image name="Книга Кирилл" width="320" height="320"/>
         <image name="Юдин Тимофей" width="3024" height="3029"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

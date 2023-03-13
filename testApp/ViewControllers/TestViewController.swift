@@ -18,7 +18,7 @@ final class TestViewController: UIViewController {
     @IBOutlet var buttonsStack: UIStackView!
 
     @IBOutlet var countryTextField: UITextField!
-    @IBOutlet var writeCountryStackView: UIStackView!
+    @IBOutlet var writeStackView: UIStackView!
     
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet var multipleSwitches: [UISwitch]!
@@ -52,17 +52,14 @@ final class TestViewController: UIViewController {
     }
     
     @IBAction func writeButtonTapped() {
-        if countryTextField.text == (Answer.title, for .write) {
+        if countryTextField.text == (answer.title, for .write) {
             answerChosen.append(currentAnswers[Index])
-        }
-            else {
-            showAlert(withTitle: "Ошибка!", andMessage: "Попробуйте еще раз.")
         }
         nextQuestion()
     }
     
     @IBAction func singleButtonTapped(_ sender: UIButton) {
-        guard let buttonIndex = singleCountryButtons.firstIndex(of: sender)
+        guard let buttonIndex = buttonsStack.firstIndex(of: sender)
         else { return}
         
         let currentAnswer = currentAnswers[buttonIndex]
@@ -73,8 +70,8 @@ final class TestViewController: UIViewController {
 }
 
 @IBAction func multipleButtonPressed() {
-    for (multipleCountrySwitches, answer) in zip(multipleCountrySwitches, currentAnswers) {
-        if multipleCountrySwitches.isOn{
+    for (multipleSwitch, answer) in zip(multipleSwitches, currentAnswers) {
+        if multipleSwitches.isOn{
             answerChosen.append(answer)
         }
     }
@@ -85,8 +82,8 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
 }
+
 
 // MARK: Private Methods
 private extension TestViewController {
@@ -97,10 +94,10 @@ private extension TestViewController {
     }
     
     func updateUI() {
-        for stackView in [] {
+        for stackView in [textField, buttonsStack, multipleStack] {
             stackView?.isHidden = true
         }
-    let currentQuestion = countryQuestions[questionIndex]
+        let currentQuestion = countryQuestions[questionIndex]
         
         questionLabel.text = currentQuestion.titleOfQuestion
         
@@ -114,9 +111,36 @@ private extension TestViewController {
     
     func showCurrentAnswers(for type: ResponseType) {
         switch type {
-        case .write:
-        case .multiple:
-        case .single:
+        case .write: showTextField(with: currentAnswers)
+        case .single: showButtonStack(with: currentAnswers)
+        case .multiple: showMultipleStack(with: currentAnswers)
         }
+    }
+    
+    func showTextField(with answers: [Answer]) {
+        textField.isHidden.toggle()
+    }
+    
+    func showButtonStack(with answers: [Answer]) {
+        buttonsStack.isHidden.toggle()
+        for (button, answer) in zip(answerButtons, answers){
+            button.setTitle(answer.title, for: .normal)
+        }
+        
+    }
+    func showMultipleStack(with answers: [Answer]) {
+        multipleStack.isHidden.toggle()
+        for (label, answer) in zip(multipleLabels, answers) {
+            label.text = answer.title
+        }
+    }
+    
+    func nextQuestion() {
+        questionIndex += 1
+        if questionIndex < countryQuestions.count {
+            updateUI()
+            return
+        }
+        performSegue(withIdentifier: "goToResult", sender: nil)
     }
 }
