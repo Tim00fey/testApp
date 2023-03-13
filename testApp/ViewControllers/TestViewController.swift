@@ -11,9 +11,15 @@ final class TestViewController: UIViewController {
     
     @IBOutlet var titleOfQuestion: UILabel!
     
+    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var questionProgressView: UIProgressView!
+    
     @IBOutlet var answerButtons: [UIButton]!
     @IBOutlet var buttonsStack: UIStackView!
 
+    @IBOutlet var countryTextField: UITextField!
+    @IBOutlet var writeCountryStackView: UIStackView!
+    
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet var multipleSwitches: [UISwitch]!
     @IBOutlet var multipleStack: UIStackView!
@@ -45,7 +51,37 @@ final class TestViewController: UIViewController {
         sender.backgroundColor = .systemBlue
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    @IBAction func writeButtonTapped() {
+        if countryTextField.text == (Answer.title, for .write) {
+            answerChosen.append(currentAnswers[Index])
+        }
+            else {
+            showAlert(withTitle: "Ошибка!", andMessage: "Попробуйте еще раз.")
+        }
+        nextQuestion()
+    }
+    
+    @IBAction func singleButtonTapped(_ sender: UIButton) {
+        guard let buttonIndex = singleCountryButtons.firstIndex(of: sender)
+        else { return}
+        
+        let currentAnswer = currentAnswers[buttonIndex]
+        answerChosen.append(currentAnswer)
+        
+        nextQuestion()
+    }
+}
+
+@IBAction func multipleButtonPressed() {
+    for (multipleCountrySwitches, answer) in zip(multipleCountrySwitches, currentAnswers) {
+        if multipleCountrySwitches.isOn{
+            answerChosen.append(answer)
+        }
+    }
+    nextQuestion()
+}
+
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
@@ -57,6 +93,30 @@ private extension TestViewController {
     func setupAnswerButtons(_ buttons: [UIButton]) {
         buttons.forEach { button in
             button.layer.cornerRadius = 10
+        }
+    }
+    
+    func updateUI() {
+        for stackView in [] {
+            stackView?.isHidden = true
+        }
+    let currentQuestion = countryQuestions[questionIndex]
+        
+        questionLabel.text = currentQuestion.titleOfQuestion
+        
+        let totalProgress = Float(questionIndex) / Float(countryQuestions.count)
+        questionProgressView.setProgress(totalProgress, animated: true)
+        
+        title = "Вопрос № \(questionIndex + 1) из \(countryQuestions.count)"
+        
+        showCurrentAnswers(for: currentQuestion.responseType)
+    }
+    
+    func showCurrentAnswers(for type: ResponseType) {
+        switch type {
+        case .write:
+        case .multiple:
+        case .single:
         }
     }
 }
