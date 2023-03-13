@@ -435,7 +435,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-vX-Are">
-                                <rect key="frame" x="0.0" y="92.5" width="320" height="858.5"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="907"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40a-gw-Zsz">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
@@ -486,7 +486,7 @@
                                                     <constraint firstItem="akt-jE-pR2" firstAttribute="centerX" secondItem="GVU-M5-F2y" secondAttribute="centerX" id="yj8-3N-6oF"/>
                                                 </constraints>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Юдин Тимофей" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-n0-fMt">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Юдин Тимофей" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-n0-fMt">
                                                 <rect key="frame" x="120" y="540" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cgM-n0-fMt" secondAttribute="height" multiplier="1:1" id="tm5-N0-CnE"/>
@@ -654,7 +654,7 @@
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="Гунин Глеб" width="640" height="640"/>
         <image name="Книга Кирилл" width="640" height="640"/>
-        <image name="Юдин Тимофей" width="3024" height="4032"/>
+        <image name="Юдин Тимофей" width="3024" height="3029"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
