@@ -9,17 +9,19 @@ import UIKit
 //MARK: - Outlets and Private 
 final class TestViewController: UIViewController {
     
+    @IBOutlet var titleOfQuestion: UILabel!
+    
     @IBOutlet var answerButtons: [UIButton]!
+    @IBOutlet var buttonsStack: UIStackView!
+
+    @IBOutlet var multipleLabels: [UILabel]!
+    @IBOutlet var multipleSwitches: [UISwitch]!
+    @IBOutlet var multipleStack: UIStackView!
     
-    @IBOutlet var CountryTextField: UITextField!
-    @IBOutlet var writeCountryStackView: UIStackView!
+    @IBOutlet var slider: UISlider!
+    @IBOutlet var sliderStack: UIStackView!
     
-    @IBOutlet var singleCountryView: UIStackView!
-    @IBOutlet var singleCountryButtons: [UIButton]!
-    
-    @IBOutlet var multipleCountryStackView: UIStackView!
-    @IBOutlet var multipleCountryLabels: [UILabel]!
-    @IBOutlet var multipleCountrySwitches: [UISwitch]!
+    @IBOutlet var textField: UITextField!
     
     private let countryQuestions = CountryQuestion.getQuestions()
     private var answerChosen: [Answer] = []
@@ -32,7 +34,6 @@ final class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.hidesBackButton = true
         setupAnswerButtons(answerButtons)
     }
     
@@ -42,6 +43,11 @@ final class TestViewController: UIViewController {
         }
         
         sender.backgroundColor = .systemBlue
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
 }

@@ -8,7 +8,9 @@
 struct Test {
     let titleOfTest: String
     let descriptionOfTest: String
-    let image: String
+    var imageName: String {
+        titleOfTest
+    }
 }
 
 struct CountryQuestion {
