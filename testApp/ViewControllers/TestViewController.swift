@@ -38,7 +38,7 @@ final class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
         setupAnswerButtons(answerButtons)
     }
     
@@ -50,12 +50,12 @@ final class TestViewController: UIViewController {
         sender.backgroundColor = .systemBlue
     }
     
-    @IBAction func writeButtonTapped() {
-        if textField.text == (answer.title, for .write) {
-            answerChosen.append(currentAnswers[Index])
-        }
-        nextQuestion()
-    }
+//    @IBAction func writeButtonTapped() {
+//        if textField.text == ([answers].title, for .write) {
+//            answerChosen.append()
+//        }
+//        nextQuestion()
+//    }
     
     @IBAction func singleButtonTapped(_ sender: UIButton) {
         guard let buttonIndex = answerButtons.firstIndex(of: sender)
