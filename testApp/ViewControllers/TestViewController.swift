@@ -91,7 +91,7 @@ private extension TestViewController {
     }
     
     func updateUI() {
-        for stackView in [textField, buttonsStack, multipleStack] {
+        for stackView in [textField, buttonsStack, multipleStack, sliderStack] {
             stackView?.isHidden = true
         }
         let currentQuestion = countryQuestions[questionIndex]
