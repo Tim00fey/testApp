@@ -73,7 +73,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="I1N-fN-xK2"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="titleOfTest">
+                                                <buttonConfiguration key="configuration" style="plain" title="Сщаауу еуые">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                 </buttonConfiguration>
@@ -929,11 +929,6 @@
                             <constraint firstItem="wIa-tC-md5" firstAttribute="trailing" secondItem="dv3-Lq-DdG" secondAttribute="trailing" constant="16" id="ni7-xL-8h2"/>
                             <constraint firstItem="dv3-Lq-DdG" firstAttribute="centerX" secondItem="zhc-J1-d4O" secondAttribute="centerX" id="p2I-QD-YA8"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="dv3-Lq-DdG"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос № из " largeTitleDisplayMode="always" id="Dlm-pf-OSz"/>
                     <connections>
