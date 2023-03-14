@@ -29,7 +29,7 @@ struct CoffeeQuestion {
                     CoffeeAnswer(title: "Раф", type: .raf),
                     CoffeeAnswer(title: "Капучино", type: .cappucino),
                     CoffeeAnswer(title: "Американо", type: .americano),
-                    CoffeeAnswer(title: "Эспреесо", type: .espresso)
+                    CoffeeAnswer(title: "Эспреcсо", type: .espresso)
                 ]
             )
         ]
