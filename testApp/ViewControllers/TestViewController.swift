@@ -26,6 +26,7 @@ final class TestViewController: UIViewController {
     @IBOutlet var sliderStack: UIStackView!
     
     @IBOutlet var textField: UITextField!
+    @IBOutlet var textFieldStack: UIStackView!
     
     private let countryQuestions = CountryQuestion.getQuestions()
     private var answerChosen: [Answer] = []
