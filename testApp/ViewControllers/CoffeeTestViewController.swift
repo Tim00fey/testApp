@@ -9,6 +9,8 @@ import UIKit
 
 class CoffeeTestViewController: UIViewController {
 
+    @IBOutlet var questionProgressView: UIProgressView!
+    
     @IBOutlet var questionLabel: UILabel!
     
     @IBOutlet var multipleStackView: UIStackView!
@@ -37,8 +39,9 @@ class CoffeeTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
-        multipleSwitches.last?.isEnabled = false
+      //  multipleSwitches.first?.isEnabled = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,10 +81,8 @@ private extension CoffeeTestViewController {
         questionLabel.text = currentQuestion.title
         
         // Calculate progress
-        //      let totalProgress = Float(questionIndex) / Float(questions.count)
-        
-        // Set progress for questionProgressView
-        //     questionProgressView.setProgress(totalProgress, animated: true)
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        questionProgressView.setProgress(totalProgress, animated: true)
         
         // Set navigation title
         title =  "Вопрос №\(questionIndex + 1) из \(questions.count)"

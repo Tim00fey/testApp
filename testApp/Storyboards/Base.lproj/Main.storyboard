@@ -903,7 +903,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
                                                 <connections>
                                                     <action selector="rangedAnswerButtonPressed" destination="soh-yM-Yn9" eventType="touchUpInside" id="bpa-mP-rdi"/>
-                                                    <segue destination="6RI-w9-MLX" kind="show" id="kM8-gr-aEp"/>
+                                                    <segue destination="6RI-w9-MLX" kind="show" identifier="showResult" id="kM8-gr-aEp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -929,18 +929,19 @@
                             <constraint firstItem="wIa-tC-md5" firstAttribute="trailing" secondItem="dv3-Lq-DdG" secondAttribute="trailing" constant="16" id="ni7-xL-8h2"/>
                             <constraint firstItem="dv3-Lq-DdG" firstAttribute="centerX" secondItem="zhc-J1-d4O" secondAttribute="centerX" id="p2I-QD-YA8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dv3-Lq-DdG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос № из " largeTitleDisplayMode="always" id="Dlm-pf-OSz"/>
                     <connections>
-                        <outlet property="multipleStack" destination="dv3-Lq-DdG" id="bz5-HF-9GZ"/>
                         <outlet property="multipleStackView" destination="dv3-Lq-DdG" id="qKK-i5-Gns"/>
                         <outlet property="questionLabel" destination="ybD-tw-EIE" id="UVF-rU-RYo"/>
                         <outlet property="questionProgressView" destination="ARf-oh-ZtP" id="bgb-Lv-NDv"/>
                         <outlet property="rangedSlider" destination="FDM-5W-aAy" id="NYD-Ab-Sm7"/>
                         <outlet property="rangedStackView" destination="Pvu-2P-9z6" id="hQP-Zs-pxU"/>
-                        <outlet property="slider" destination="FDM-5W-aAy" id="6Ge-rB-bxh"/>
-                        <outlet property="sliderStack" destination="Pvu-2P-9z6" id="bTi-1d-pJo"/>
-                        <outlet property="titleOfQuestion" destination="ybD-tw-EIE" id="zok-ib-hKI"/>
                         <outletCollection property="multipleLabels" destination="o4t-hp-DVw" collectionClass="NSMutableArray" id="J7U-9D-CCT"/>
                         <outletCollection property="multipleLabels" destination="UYL-ha-kbZ" collectionClass="NSMutableArray" id="OcN-Hi-Bv4"/>
                         <outletCollection property="multipleSwitches" destination="xjX-xa-4EP" collectionClass="NSMutableArray" id="eYF-ZJ-2gn"/>
@@ -1010,10 +1011,13 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" style="editor" id="KZO-Wx-MxX">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="house" catalog="system" id="yBe-rV-0vv">
                             <connections>
-                                <action selector="goHomeButtonTapped" destination="6RI-w9-MLX" id="iOL-HG-rXr"/>
+                                <action selector="doneButtonPressed" destination="6RI-w9-MLX" id="f1G-4C-uE6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultLabel" destination="eTZ-P3-1Zn" id="O9l-gx-Rlp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPW-HC-vWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
