@@ -19,6 +19,9 @@
 		C4F65ADB29BB8C88001AA10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F65ADA29BB8C88001AA10A /* Assets.xcassets */; };
 		C4F65ADE29BB8C88001AA10A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F65ADC29BB8C88001AA10A /* LaunchScreen.storyboard */; };
 		CF030FA129BE0502002B4923 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF030FA029BE0502002B4923 /* Coffee.swift */; };
+		CFBF219A29C10F3E0040C169 /* CoffeeWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF219929C10F3E0040C169 /* CoffeeWelcomeViewController.swift */; };
+		CFBF219C29C10F8F0040C169 /* CoffeeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF219B29C10F8F0040C169 /* CoffeeTestViewController.swift */; };
+		CFBF219E29C111E30040C169 /* CoffeeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF219D29C111E30040C169 /* CoffeeResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		C4F65ADD29BB8C88001AA10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F65ADF29BB8C88001AA10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF030FA029BE0502002B4923 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		CFBF219929C10F3E0040C169 /* CoffeeWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeWelcomeViewController.swift; path = testApp/ViewControllers/CoffeeWelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		CFBF219B29C10F8F0040C169 /* CoffeeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTestViewController.swift; sourceTree = "<group>"; };
+		CFBF219D29C111E30040C169 /* CoffeeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +70,12 @@
 			children = (
 				C4F65AD529BB8C87001AA10A /* MainViewController.swift */,
 				C4E994EC29BDAC79000EB120 /* WelcomeTestViewController.swift */,
+				CFBF219929C10F3E0040C169 /* CoffeeWelcomeViewController.swift */,
 				C4E994EE29BDAC8D000EB120 /* TestViewController.swift */,
 				C4E994F029BDACA3000EB120 /* ResultViewController.swift */,
+				CFBF219D29C111E30040C169 /* CoffeeResultViewController.swift */,
 				C418740629BF88D700859AA6 /* AboutDevelopersViewController.swift */,
+				CFBF219B29C10F8F0040C169 /* CoffeeTestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB54F2429BD150300685BB2 /* Country.swift in Sources */,
+				CFBF219C29C10F8F0040C169 /* CoffeeTestViewController.swift in Sources */,
+				CFBF219E29C111E30040C169 /* CoffeeResultViewController.swift in Sources */,
 				C4E994ED29BDAC79000EB120 /* WelcomeTestViewController.swift in Sources */,
 				C4E994F129BDACA3000EB120 /* ResultViewController.swift in Sources */,
 				C4F65AD629BB8C87001AA10A /* MainViewController.swift in Sources */,
@@ -197,6 +208,7 @@
 				C418740729BF88D700859AA6 /* AboutDevelopersViewController.swift in Sources */,
 				C4F65AD429BB8C87001AA10A /* SceneDelegate.swift in Sources */,
 				CF030FA129BE0502002B4923 /* Coffee.swift in Sources */,
+				CFBF219A29C10F3E0040C169 /* CoffeeWelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

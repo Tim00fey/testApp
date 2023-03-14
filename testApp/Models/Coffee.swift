@@ -16,20 +16,20 @@ struct CoffeeQuestion {
                 title: "Что вы любите в составе кофейного напитка?",
                 responseType: .multiple,
                 answers: [
-                    CoffeeAnswer(title: "Шот эспрессо", coffee: .espresso),
-                    CoffeeAnswer(title: "Молоко", coffee: .cappucino),
-                    CoffeeAnswer(title: "Сливки", coffee: .raf),
-                    CoffeeAnswer(title: "Вода", coffee: .americano)
+                    CoffeeAnswer(title: "Шот эспрессо", type: .espresso),
+                    CoffeeAnswer(title: "Молоко", type: .cappucino),
+                    CoffeeAnswer(title: "Сливки", type: .raf),
+                    CoffeeAnswer(title: "Вода", type: .americano)
                 ]
             ),
             CoffeeQuestion(
                 title: "Какой крепости предпочитаете напиток?",
                 responseType: .ranged,
                 answers: [
-                    CoffeeAnswer(title: "Раф", coffee: .raf),
-                    CoffeeAnswer(title: "Капучино", coffee: .cappucino),
-                    CoffeeAnswer(title: "Американо", coffee: .americano),
-                    CoffeeAnswer(title: "Эспреесо", coffee: .espresso)
+                    CoffeeAnswer(title: "Раф", type: .raf),
+                    CoffeeAnswer(title: "Капучино", type: .cappucino),
+                    CoffeeAnswer(title: "Американо", type: .americano),
+                    CoffeeAnswer(title: "Эспреесо", type: .espresso)
                 ]
             )
         ]
@@ -43,7 +43,7 @@ enum CoffeeResponseType {
 
 struct CoffeeAnswer {
     let title: String
-    let coffee: CoffeType
+    let type: CoffeType
 }
 
 enum ingredient: String {
