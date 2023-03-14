@@ -179,7 +179,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-fw-1Jc">
-                                <rect key="frame" x="16" y="169" width="288" height="278.5"/>
+                                <rect key="frame" x="16" y="169" width="288" height="223"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QWI-JG-s6S">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="223"/>
@@ -234,16 +234,6 @@
                                                 <connections>
                                                     <action selector="answerButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="T55-rF-ezt"/>
                                                 </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-6n-eHi">
-                                        <rect key="frame" x="95.5" y="244" width="97.5" height="34.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaM-Bu-bTc">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -329,12 +319,26 @@
                                     <constraint firstItem="6qx-oX-wxc" firstAttribute="leading" secondItem="Nz9-gt-Kw4" secondAttribute="leading" id="Plx-aT-XDg"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите ответ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88L-ao-jUa">
-                                <rect key="frame" x="16" y="189" width="288" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="SJw-xL-y3i">
+                                <rect key="frame" x="16" y="189" width="288" height="93.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите ответ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88L-ao-jUa">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZk-v7-6Cy">
+                                        <rect key="frame" x="95.5" y="59" width="97.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="88L-ao-jUa" firstAttribute="leading" secondItem="SJw-xL-y3i" secondAttribute="leading" id="8xZ-CS-vW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="88L-ao-jUa" secondAttribute="trailing" id="ufo-Y3-M5O"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="fJ4-pF-0dR">
                                 <rect key="frame" x="16" y="221" width="288" height="126"/>
                                 <subviews>
@@ -385,23 +389,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="DOf-Gf-8lp" secondAttribute="trailing" constant="16" id="0Um-6F-wLW"/>
-                            <constraint firstItem="88L-ao-jUa" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="9TM-Zg-p2D"/>
                             <constraint firstItem="Ldh-vK-NAh" firstAttribute="top" secondItem="4UX-j4-zG1" secondAttribute="top" id="Esn-Pk-0LQ"/>
                             <constraint firstItem="Nz9-gt-Kw4" firstAttribute="top" secondItem="DOf-Gf-8lp" secondAttribute="bottom" constant="50" id="FlE-lh-uLO"/>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="Nz9-gt-Kw4" secondAttribute="trailing" constant="16" id="K2y-wA-Bf5"/>
                             <constraint firstItem="fJ4-pF-0dR" firstAttribute="centerY" secondItem="QIf-XW-kTd" secondAttribute="centerY" id="QNf-dW-Tbf"/>
                             <constraint firstItem="Ldh-vK-NAh" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" id="Qpp-9x-Pux"/>
                             <constraint firstItem="DOf-Gf-8lp" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="S45-ea-p6O"/>
+                            <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="SJw-xL-y3i" secondAttribute="trailing" constant="16" id="ZXT-3O-np9"/>
+                            <constraint firstItem="SJw-xL-y3i" firstAttribute="top" secondItem="DOf-Gf-8lp" secondAttribute="bottom" constant="50" id="aUJ-N2-Ewr"/>
                             <constraint firstItem="Nz9-gt-Kw4" firstAttribute="centerX" secondItem="QIf-XW-kTd" secondAttribute="centerX" id="adK-bm-8d0"/>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="fJ4-pF-0dR" secondAttribute="trailing" constant="16" id="g71-rz-cps"/>
                             <constraint firstItem="fJ4-pF-0dR" firstAttribute="centerX" secondItem="QIf-XW-kTd" secondAttribute="centerX" id="ibu-x7-n0Y"/>
+                            <constraint firstItem="SJw-xL-y3i" firstAttribute="centerX" secondItem="QIf-XW-kTd" secondAttribute="centerX" id="jEp-T3-3Aa"/>
                             <constraint firstItem="Nz9-gt-Kw4" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="jJi-fc-Mux"/>
                             <constraint firstItem="fJ4-pF-0dR" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="keb-bX-pY7"/>
                             <constraint firstItem="Am1-fw-1Jc" firstAttribute="top" secondItem="DOf-Gf-8lp" secondAttribute="bottom" constant="30" id="kl1-AS-7xJ"/>
-                            <constraint firstItem="88L-ao-jUa" firstAttribute="top" secondItem="DOf-Gf-8lp" secondAttribute="bottom" constant="50" id="kqm-V7-5us"/>
-                            <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="88L-ao-jUa" secondAttribute="trailing" constant="16" id="kxD-ZC-IB0"/>
                             <constraint firstItem="Am1-fw-1Jc" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="mhD-63-2k5"/>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="Am1-fw-1Jc" secondAttribute="trailing" constant="16" id="p1W-Ig-apk"/>
+                            <constraint firstItem="SJw-xL-y3i" firstAttribute="leading" secondItem="4UX-j4-zG1" secondAttribute="leading" constant="16" id="pMI-nW-U8q"/>
                             <constraint firstItem="DOf-Gf-8lp" firstAttribute="top" secondItem="Ldh-vK-NAh" secondAttribute="bottom" constant="16" id="t1E-ux-WzC"/>
                             <constraint firstItem="4UX-j4-zG1" firstAttribute="trailing" secondItem="Ldh-vK-NAh" secondAttribute="trailing" id="tFu-qp-fFZ"/>
                             <constraint firstItem="Am1-fw-1Jc" firstAttribute="centerX" secondItem="QIf-XW-kTd" secondAttribute="centerX" id="xbp-Vn-W3h"/>
@@ -415,6 +420,7 @@
                         <outlet property="slider" destination="52C-Yd-B7n" id="dDY-yQ-pes"/>
                         <outlet property="sliderStack" destination="fJ4-pF-0dR" id="GaW-Tb-3qG"/>
                         <outlet property="textField" destination="88L-ao-jUa" id="FQj-c7-pGZ"/>
+                        <outlet property="textFieldStack" destination="SJw-xL-y3i" id="QWF-fu-7XR"/>
                         <outlet property="titleOfQuestion" destination="DOf-Gf-8lp" id="tXf-J6-lb0"/>
                         <outletCollection property="multipleLabels" destination="XQK-k2-Fsk" collectionClass="NSMutableArray" id="gx3-bc-eMA"/>
                         <outletCollection property="multipleLabels" destination="W9j-8v-eG0" collectionClass="NSMutableArray" id="2W0-we-krY"/>
