@@ -440,13 +440,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Гунин Глеб" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-dJ-ck4">
-                                                <rect key="frame" x="120" y="50" width="80" height="80"/>
+                                                <rect key="frame" x="120" y="50" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wJg-dJ-ck4" secondAttribute="height" multiplier="1:1" id="iO0-LU-8y7"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-qA-bYK">
-                                                <rect key="frame" x="16" y="160" width="288" height="65"/>
+                                                <rect key="frame" x="16" y="180" width="288" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гунин Глеб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIX-Mt-7Df">
                                                         <rect key="frame" x="71" y="14.5" width="146" height="36"/>
@@ -463,13 +463,13 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Книга Кирилл" translatesAutoresizingMaskIntoConstraints="NO" id="NCL-nM-JaT">
-                                                <rect key="frame" x="120" y="295" width="80" height="80"/>
+                                                <rect key="frame" x="120" y="295" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NCL-nM-JaT" secondAttribute="height" multiplier="1:1" id="y9w-jH-sOF"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-M5-F2y">
-                                                <rect key="frame" x="16" y="405" width="288" height="65"/>
+                                                <rect key="frame" x="16" y="425" width="288" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Книга Кирилл" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akt-jE-pR2">
                                                         <rect key="frame" x="51" y="14.5" width="186.5" height="36"/>
@@ -486,13 +486,13 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Юдин Тимофей" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-n0-fMt">
-                                                <rect key="frame" x="120" y="540" width="80" height="80"/>
+                                                <rect key="frame" x="120" y="540" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cgM-n0-fMt" secondAttribute="height" multiplier="1:1" id="tm5-N0-CnE"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-ao-Ea0">
-                                                <rect key="frame" x="16" y="650" width="288" height="65"/>
+                                                <rect key="frame" x="16" y="670" width="288" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Юдин Тимофей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-Qv-nY1">
                                                         <rect key="frame" x="40.5" y="14.5" width="207" height="36"/>
@@ -511,26 +511,26 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="width" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="2:25" id="0hx-L9-L1g"/>
+                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="width" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="2:25" constant="20" id="0hx-L9-L1g"/>
                                             <constraint firstAttribute="trailing" secondItem="GVU-M5-F2y" secondAttribute="trailing" constant="16" id="4iF-wq-3M0"/>
-                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" id="7Gv-wo-1Br"/>
+                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" constant="10" id="7Gv-wo-1Br"/>
                                             <constraint firstAttribute="height" constant="1000" id="AGU-JW-9QH"/>
-                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="top" secondItem="ek9-qA-bYK" secondAttribute="bottom" constant="70" id="DV5-kE-KC5"/>
+                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="top" secondItem="ek9-qA-bYK" secondAttribute="bottom" constant="50" id="DV5-kE-KC5"/>
                                             <constraint firstItem="ek9-qA-bYK" firstAttribute="top" secondItem="wJg-dJ-ck4" secondAttribute="bottom" constant="30" id="I8E-wg-ebi"/>
                                             <constraint firstItem="wJg-dJ-ck4" firstAttribute="top" secondItem="40a-gw-Zsz" secondAttribute="top" constant="50" id="Nlp-vY-zEE"/>
                                             <constraint firstItem="ek9-qA-bYK" firstAttribute="leading" secondItem="40a-gw-Zsz" secondAttribute="leading" constant="16" id="OAF-qJ-Pjj"/>
-                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" id="XSA-wl-BXd"/>
-                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="top" secondItem="GVU-M5-F2y" secondAttribute="bottom" constant="70" id="d7a-t5-5XV"/>
+                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" constant="20" id="XSA-wl-BXd"/>
+                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="top" secondItem="GVU-M5-F2y" secondAttribute="bottom" constant="50" id="d7a-t5-5XV"/>
                                             <constraint firstAttribute="trailing" secondItem="ek9-qA-bYK" secondAttribute="trailing" constant="16" id="eGA-7h-MXi"/>
-                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" id="iDZ-8a-usa"/>
+                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" constant="20" id="iDZ-8a-usa"/>
                                             <constraint firstAttribute="trailing" secondItem="pIC-ao-Ea0" secondAttribute="trailing" constant="16" id="jNK-dc-WsY"/>
-                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" id="jx0-pX-Oxr"/>
-                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" id="lvb-6b-FTr"/>
+                                            <constraint firstItem="cgM-n0-fMt" firstAttribute="height" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="0.08" constant="20" id="jx0-pX-Oxr"/>
+                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" constant="10" id="lvb-6b-FTr"/>
                                             <constraint firstItem="GVU-M5-F2y" firstAttribute="leading" secondItem="40a-gw-Zsz" secondAttribute="leading" constant="16" id="mVJ-cV-WQh"/>
                                             <constraint firstItem="pIC-ao-Ea0" firstAttribute="leading" secondItem="40a-gw-Zsz" secondAttribute="leading" constant="16" id="nk4-IT-Loi"/>
-                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" id="or7-XO-Vd2"/>
+                                            <constraint firstItem="NCL-nM-JaT" firstAttribute="centerX" secondItem="40a-gw-Zsz" secondAttribute="centerX" constant="10" id="or7-XO-Vd2"/>
                                             <constraint firstItem="GVU-M5-F2y" firstAttribute="top" secondItem="NCL-nM-JaT" secondAttribute="bottom" constant="30" id="uvd-Nz-Prh"/>
-                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="width" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="2:25" id="wI6-zH-Ch0"/>
+                                            <constraint firstItem="wJg-dJ-ck4" firstAttribute="width" secondItem="40a-gw-Zsz" secondAttribute="height" multiplier="2:25" constant="20" id="wI6-zH-Ch0"/>
                                             <constraint firstItem="pIC-ao-Ea0" firstAttribute="top" secondItem="cgM-n0-fMt" secondAttribute="bottom" constant="30" id="zmD-VM-1FC"/>
                                         </constraints>
                                     </view>
