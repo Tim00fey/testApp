@@ -51,9 +51,9 @@ final class TestViewController: UIViewController {
     }
     
     @IBAction func writeButtonTapped() {
-//        if textField.text == ([answers].title, for .write) {
-//            answerChosen.append()
-//        }
+        if textField.text == "Пекин" {
+            answerChosen.append(contentsOf: countryQuestions[0].answers)
+        }
         nextQuestion()
     }
     
@@ -92,7 +92,7 @@ private extension TestViewController {
     }
     
     func updateUI() {
-        for stackView in [textField, buttonsStack, multipleStack, sliderStack] {
+        for stackView in [textFieldStack, buttonsStack, multipleStack, sliderStack] {
             stackView?.isHidden = true
         }
         let currentQuestion = countryQuestions[questionIndex]
@@ -116,7 +116,7 @@ private extension TestViewController {
     }
     
     func showTextField(with answers: [Answer]) {
-        textField.isHidden.toggle()
+        textFieldStack.isHidden.toggle()
     }
     
     func showButtonStack(with answers: [Answer]) {

@@ -197,6 +197,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="answerButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="9IR-GH-KI8"/>
+                                                    <action selector="singleButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="xkJ-e4-51j"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBV-r2-0dJ">
@@ -209,6 +210,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="answerButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="NHs-Jy-UPt"/>
+                                                    <action selector="singleButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="Afh-Rd-wpQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-sm-SPo">
@@ -221,6 +223,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="answerButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="XMd-Se-GnL"/>
+                                                    <action selector="singleButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="pCx-Jv-mE0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6k-79-7vG">
@@ -233,6 +236,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="answerButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="T55-rF-ezt"/>
+                                                    <action selector="singleButtonTapped:" destination="zwi-jB-XoZ" eventType="touchUpInside" id="8Ki-Rf-FhA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -310,6 +314,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                                <connections>
+                                                    <action selector="multipleButtonPressed" destination="zwi-jB-XoZ" eventType="touchUpInside" id="ENs-TI-ckr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -332,6 +339,9 @@
                                         <rect key="frame" x="95.5" y="59" width="97.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                        <connections>
+                                            <action selector="writeButtonTapped" destination="zwi-jB-XoZ" eventType="touchUpInside" id="WgV-gQ-qaV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -477,6 +487,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionOfTestLabel" destination="rau-SA-1Ea" id="Ry5-X3-puW"/>
+                        <outlet property="titleOfResultLabel" destination="aGu-dH-nDV" id="v4Z-IA-xjN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKo-At-NTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
