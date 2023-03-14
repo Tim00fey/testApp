@@ -329,9 +329,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
-                                <connections>
-                                    <segue destination="f1J-We-2s0" kind="show" identifier="goToResult" id="ybY-jR-7Li"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4UX-j4-zG1"/>
@@ -377,6 +374,7 @@
                         <outletCollection property="multipleLabels" destination="TPn-Z3-tWh" collectionClass="NSMutableArray" id="jNF-rC-zy8"/>
                         <outletCollection property="multipleLabels" destination="W9j-8v-eG0" collectionClass="NSMutableArray" id="2W0-we-krY"/>
                         <outletCollection property="multipleSwitches" destination="kYK-11-bv9" collectionClass="NSMutableArray" id="6zC-rx-Bqq"/>
+                        <segue destination="f1J-We-2s0" kind="show" identifier="goToResult" id="oHu-oU-AWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aX-TL-FOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -655,7 +653,7 @@
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="Гунин Глеб" width="320" height="320"/>
         <image name="Книга Кирилл" width="320" height="320"/>
-        <image name="Юдин Тимофей" width="3024" height="3029"/>
+        <image name="Юдин Тимофей" width="1512" height="1514.5"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
