@@ -39,20 +39,20 @@ final class ResultViewController: UIViewController {
             let sortedFrequencyOfCorrect = frequencyOfCorrect.sorted { $0.value > $1.value }
             guard let mostFrequencyOfCorrect = sortedFrequencyOfCorrect.first?.key else { return }
             
-            updateUI(with: mostFrequencyOfCorrect)
+//            updateUI(with: mostFrequencyOfCorrect)
         }
-        private func updateUI(with correct: Correct) {
-            if Correct.value > 2 {
-                titleOfResultLabel.text = "Поздравляю!"
-                descriptionOfTestLabel.text = "Вы справились без единой ошибки!"
-            } else if Correct.value > 1 {
-                titleOfResultLabel.text = "Поздравляю!"
-                descriptionOfTestLabel.text = "Вы совершили 1 ошибку!"
-            } else if Correct.value <= 1 {
-                titleOfResultLabel.text = "Не расстраивайтесь!"
-                descriptionOfTestLabel.text = "Попробуйте еще раз!"
-            }
-        }
-        
+//        private func updateUI(with correct: Correct) {
+//            if Correct.value > 2 {
+//                titleOfResultLabel.text = "Поздравляю!"
+//                descriptionOfTestLabel.text = "Вы справились без единой ошибки!"
+//            } else if Correct.value > 1 {
+//                titleOfResultLabel.text = "Поздравляю!"
+//                descriptionOfTestLabel.text = "Вы совершили 1 ошибку!"
+//            } else if Correct.value <= 1 {
+//                titleOfResultLabel.text = "Не расстраивайтесь!"
+//                descriptionOfTestLabel.text = "Попробуйте еще раз!"
+//            }
+//        }
+//
     }
     
